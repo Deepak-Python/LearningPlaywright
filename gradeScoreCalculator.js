@@ -1,16 +1,16 @@
 
 //Write a program that calculates and displays the letter grade for a given numerical score (e.g., A, B, C, D, or F) based on the following grading scale:
 
-let score = 82.869897;
-
-
-if (!Number.isInteger(score)) {
-    score = Number.parseInt(score);
-    console.log("new value of score is : " + score);
-}
+let score = "Deepak";
 
 
 if (typeof score === "number") {
+
+    if (!Number.isInteger(score)) {
+    score = Number.parseInt(score);
+    console.log("new value of score is : " + score);
+    
+    }
 
     if (score >= 0 && score <= 100) {
 
@@ -35,5 +35,5 @@ if (typeof score === "number") {
         console.log("Invalid score")
     }
 } else {
-    console.log("Enter valid score in numeric format")
+    console.log("Enter valid score not in numeric format")
 }
